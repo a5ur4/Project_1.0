@@ -6,6 +6,7 @@ body {
 
 :root {
     --header-bg-color: #1e2891af;
+    --header-bgbutton-color: #1E2791
 }
 
 header {
@@ -16,6 +17,13 @@ header {
 
 header h2 {
     margin-left: 25px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+header h2 img {
+    height: 30px;
+    width: 30px;
 }
 
 header nav {
@@ -32,6 +40,30 @@ header ul li {
     margin-left: 15px;
     margin-right: 15px;
     cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+header ul li:hover {
+    color: var(--header-bg-color);
+    font-weight: bold;
+    font-size: large;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+header ul li::after {
+    content: " ";
+    width: 0%;
+    height: 5px;
+    background-color: var(--header-bg-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+header li:hover::after {
+    width: 100%;
 }
 
 header input {
@@ -39,30 +71,42 @@ header input {
     width: 150px;
     border-radius: 5px;
     border: none;
-    transition: 0.5s ease-in-out; 
+    transition: 0.5s ease-in-out;
 }
 
 header input:hover {
-    box-shadow: 0px 0px 42px 9px rgba(44,67,176,0.83);
+    box-shadow: 0px 0px 42px 9px rgba(44, 67, 176, 0.83);
 }
 
 header input:focus {
-    box-shadow: 0px 0px 42px 9px rgba(44,67,176,0.83);
+    box-shadow: 0px 0px 42px 9px rgba(44, 67, 176, 0.83);
     width: 200px;
     height: 30px;
 }
 
 header nav {
-    margin-left: -100px;
+    margin-left: -80px;
 }
 
 header button {
     border-radius: 5px;
     border: none;
     height: 25px;
-    width: 100px;   
+    width: 100px;
+    transition: 0.5s ease-in-out;
 }
 
-header button a{
+header button:hover {
+    background-color: var(--header-bgbutton-color);
+    width: 110px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+header button:hover a {
+    color: white;
+}
+
+header button a {
     text-decoration: none;
 }
