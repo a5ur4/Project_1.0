@@ -63,7 +63,7 @@ main img {
     width: 60px;
 }
 
-main form{
+main form {
     text-align: left;
     margin: 0 auto;
     border: 1px solid black;
@@ -102,7 +102,7 @@ main form div a {
     font-size: small;
 }
 
-main form button{
+main form button {
     font-weight: 600;
     color: whitesmoke;
     margin-left: 15px;
@@ -141,7 +141,7 @@ main form button:hover::after {
     border-radius: 10px;
     height: 4em;
     width: 20em;
-    background-color: rgba(0, 0, 0, 0.248);   
+    background-color: rgba(0, 0, 0, 0.248);
 }
 
 #sing_in a {
