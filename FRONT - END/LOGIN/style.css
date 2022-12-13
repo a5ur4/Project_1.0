@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(125deg, #1e2791, #64b6ee);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 34s ease infinite;
+    -moz-animation: AnimationName 34s ease infinite;
+    animation: AnimationName 34s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 53%
+    }
+
+    50% {
+        background-position: 100% 48%
+    }
+
+    100% {
+        background-position: 0% 53%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 53%
+    }
+
+    50% {
+        background-position: 100% 48%
+    }
+
+    100% {
+        background-position: 0% 53%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 53%
+    }
+
+    50% {
+        background-position: 100% 48%
+    }
+
+    100% {
+        background-position: 0% 53%
+    }
+}
+
+main {
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+main img {
+    height: 60px;
+    width: 60px;
+}
+
+main form{
+    text-align: left;
+    margin: 0 auto;
+    border: 1px solid black;
+    height: 17em;
+    width: 20em;
+    background-color: rgba(0, 0, 0, 0.248);
+    border-radius: 10px;
+}
+
+main form div {
+    margin-left: 15px;
+    margin-right: 15px;
+    line-height: 25px;
+}
+
+main form div label {
+    font-size: medium;
+    font-weight: 500;
+}
+
+main form div input {
+    width: 21.5em;
+    height: 30px;
+    background: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+main form div input:focus {
+    background: rgb(233, 233, 233);
+}
+
+main form div a {
+    color: black;
+    font-size: small;
+}
+
+main form button{
+    font-weight: 600;
+    color: whitesmoke;
+    margin-left: 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: 0.5s ease-in-out;
+    background-color: #1e2791;
+    border-radius: 5px;
+    width: 22em;
+    height: 40px;
+}
+
+main form button:hover {
+    background-color: #191e53;
+}
+
+main form button::after {
+    content: " ";
+    width: 0%;
+    height: 5px;
+    background-color: #1e2791;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+main form button:hover::after {
+    width: 100%;
+}
+
+#sing_in {
+    border: 1px solid black;
+    margin: 0 auto;
+    border-radius: 10px;
+    height: 4em;
+    width: 20em;
+    background-color: rgba(0, 0, 0, 0.248);   
+}
+
+#sing_in a {
+    color: black;
+    font-weight: 500;
+}
+
+.terms {
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+
+.terms:hover {
+    color: #1e2791;
+    font-size: large;
+    text-decoration: underline;
+}
+
+.terms::after {
+    content: " ";
+    width: 0%;
+    height: 5px;
+    background-color: #1e2791;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.terms:hover::after {
+    width: 100%;
+}
