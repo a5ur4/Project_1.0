@@ -117,14 +117,14 @@ main form button {
 }
 
 main form button:hover {
-    background-color: #191e53;
+    background-color: #09b43a;
 }
 
 main form button::after {
     content: " ";
     width: 0%;
     height: 5px;
-    background-color: #1e2791;
+    background: linear-gradient(90deg, rgba(30,39,145,1) 31%, rgba(9,180,58,1) 91%);
     position: absolute;
     top: 0;
     left: 0;
@@ -167,7 +167,7 @@ main form button:hover::after {
     content: " ";
     width: 0%;
     height: 5px;
-    background-color: #1e2791;
+    background: linear-gradient(90deg, rgba(30,39,145,1) 31%, rgba(9,180,58,1) 91%);
     position: absolute;
     top: 0;
     left: 0;
